@@ -1,0 +1,95 @@
+/* styles.css */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+
+.title {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+}
+
+.calculator {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    background-color: #fff;
+    width: 220px;
+}
+
+#display {
+    width: 90%;
+    height: 50px;
+    font-size: 1.5em;
+    text-align: right;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 2px solid #4caf50;
+    border-radius: 5px;
+    background-color: #e8f5e9;
+    color: #333;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.btn {
+    height: 50px;
+    font-size: 1.2em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #333;
+}
+
+.btn:hover {
+    background-color: #ddd;
+}
+
+.number {
+    background-color: #bbdefb; /* Light blue for number buttons */
+}
+
+.number:hover {
+    background-color: #90caf9; /* Slightly darker blue */
+}
+
+.operator {
+    background-color: #ffab91; /* Light orange for operator buttons */
+    color: #fff;
+}
+
+.operator:hover {
+    background-color: #ff8a65; /* Slightly darker orange */
+}
+
+.equal {
+    background-color: #4caf50; /* Green for equal button */
+    color: #fff;
+    grid-column: span 2;
+}
+
+.equal:hover {
+    background-color: #388e3c; /* Darker green */
+}
+
+.clear {
+    background-color: #d32f2f; /* Red for clear button */
+    color: #fff;
+    grid-column: span 2;
+}
+
+.clear:hover {
+    background-color: #c62828; /* Darker red */
+}
